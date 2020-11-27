@@ -8,10 +8,10 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$product = $_POST['product'];
-$price = $_POST['price'];
-$amount = $_POST['amount'];
-$total = $_POST['price*amount'];
+$product = $_POST['Product'];
+$price = $_POST['Price'];
+$amount = $_POST['Amount'];
+$total = $_POST['Price*Amount'];
 
 
 $sql = "INSERT INTO guestbook (Product , Price , Amount , Total) VALUES ('$product', '$price', '$amount', '$total')";
