@@ -8,7 +8,7 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$product = $_POST['Product'];
+$product = $_POST['name'];
 $price = $_POST['Price'];
 $amount = $_POST['Amount'];
 $total = $_POST['Price*Amount'];
